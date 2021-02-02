@@ -1,3 +1,5 @@
+<img src="logo.svg" height="100px" width="100px"/>
+
 # icon.js
 Icon.js is the easy library for icons. It's an alternative of Iconify. It uses the 
 
