@@ -1,6 +1,7 @@
 /*
   Icon.JS
   Copyright 2021 GrahamSH
+  https://cdn.jsdelivr.net/gh/GrahamSH-LLK/icon.js/icon.js
  */
 async function icon() {
     let elements = document.querySelectorAll("i.icon");
@@ -9,7 +10,7 @@ async function icon() {
       let icon = item.getAttribute("data-icon");
       let json;
       if (localStorage.getItem(`${set}-${icon}`) === null) {
-        let data = await fetch(`http://api.iconify.design/${set}.json?icons=${icon}&pretty=1`);
+        let data = await fetch(`https://api.iconify.design/${set}.json?icons=${icon}&pretty=1`);
         json = JSON.parse(await data.text());
       } else {
           json = JSON.parse(localStorage.getItem(`${set}-${icon}`));
